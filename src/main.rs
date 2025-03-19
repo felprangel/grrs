@@ -1,9 +1,10 @@
 use clap::Parser;
+use std::path::PathBuf;
 
 #[derive(Parser)]
 struct Cli {
     pattern: String,
-    path: std::path::PathBuf
+    path: PathBuf
 }
 
 fn main() {
